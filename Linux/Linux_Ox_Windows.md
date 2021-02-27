@@ -121,10 +121,13 @@ git clone [url]
 
 ```
 git config --global user.name "yourname"
-git config --global user.email “yourmail@XXX.com”
+git config --global user.email "yourmail@XXX.com"
    
 git config --global user.name "Freshflash"
-git config --global user.email “1024046931@qq.com”
+git config --global user.email "1024046931@qq.com"
+
+git config --global user.name "Freshflash"
+git config --global user.email "1091285882@qq.com"
 ```
 
 - 查看自己的各种信息
@@ -153,6 +156,20 @@ ssh-keygen -t rsa -C "1024046931@qq.com" -f 'Freshflash'
 **ssh-copy-id -i ~/.ssh/mservice.pub[git@](https://link.jianshu.com?t=mailto%3Agit%40192.168.XX.XX)XXX.XXX.XXX.XXX**(注：这里的mservice.pub是我自己的起的名字，具体到第2步中，就是命令-f后面的 ‘Your Name’.pub）
 
 之后会让你确认是否连接，输入 yes
+
+> 忽略文件
+
+1. 通过终端 `touch .gitignore`建立`.gitignore`文件。
+2. 文件规则
+   - 以`#`号开始表示忽略此行
+   - `*`代表任意多字符，`?`表示一个字符，[abc]代表任意可选字符。
+   - 名称最前`!`表示例外规则，不被忽略。
+   - 名称最前路径分隔符`/`，表示忽略此目录下的文件，而子目录文件不忽略
+   - 名称最后路径分隔符`/`，表示要忽略此目录下该名称的子目录，而非文件（默认文件或目录都忽略）
+
+
+
+![截屏2021-02-27 上午10.51.16](Linux_Ox_Windows.assets/截屏2021-02-27 上午10.51.16.png)
 
 ### 查看状态
 
