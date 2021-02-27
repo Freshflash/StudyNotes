@@ -122,10 +122,12 @@ git clone [url]
 ```
 git config --global user.name "yourname"
 git config --global user.email "yourmail@XXX.com"
-   
+
+#github
 git config --global user.name "Freshflash"
 git config --global user.email "1024046931@qq.com"
 
+#码云
 git config --global user.name "Freshflash"
 git config --global user.email "1091285882@qq.com"
 ```
@@ -170,6 +172,10 @@ ssh-keygen -t rsa -C "1024046931@qq.com" -f 'Freshflash'
 
 
 ![截屏2021-02-27 上午10.51.16](Linux_Ox_Windows.assets/截屏2021-02-27 上午10.51.16.png)
+
+
+
+
 
 ### 查看状态
 
